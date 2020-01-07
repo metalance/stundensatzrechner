@@ -1,0 +1,451 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "../../../sap-ui-integration.js",
+			"module": "sap-ui-integration.js"
+		},
+		{
+			"name": ".library"
+		},
+		{
+			"name": ".theming"
+		},
+		{
+			"name": "host/HostConfiguration-dbg.js",
+			"module": "sap/ui/integration/host/HostConfiguration.js",
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/f/cards/AnalyticalContent.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/integration/host/HostConfigurationCompiler.js"
+			]
+		},
+		{
+			"name": "host/HostConfiguration.js",
+			"module": "sap/ui/integration/host/HostConfiguration.js",
+			"required": [
+				"sap/base/Log.js",
+				"sap/f/cards/AnalyticalContent.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/integration/host/HostConfigurationCompiler.js"
+			]
+		},
+		{
+			"name": "host/HostConfiguration.less"
+		},
+		{
+			"name": "host/HostConfigurationCompiler-dbg.js",
+			"module": "sap/ui/integration/host/HostConfigurationCompiler.js",
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/thirdparty/less.js"
+			]
+		},
+		{
+			"name": "host/HostConfigurationCompiler.js",
+			"module": "sap/ui/integration/host/HostConfigurationCompiler.js",
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/thirdparty/less.js"
+			]
+		},
+		{
+			"name": "host/HostConfigurationMap.json"
+		},
+		{
+			"name": "library-bootstrap-dbg.js",
+			"module": "sap/ui/integration/library-bootstrap.js",
+			"isDebug": true
+		},
+		{
+			"name": "library-bootstrap.js",
+			"module": "sap/ui/integration/library-bootstrap.js"
+		},
+		{
+			"name": "library-dbg.js",
+			"module": "sap/ui/integration/library.js",
+			"isDebug": true,
+			"required": [
+				"sap/f/library.js",
+				"sap/ui/Global.js",
+				"sap/ui/base/DataType.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "library-h2-preload-dbg.js",
+			"module": "sap/ui/integration/library-h2-preload.js",
+			"isDebug": true,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/f/CardRenderer.js",
+				"sap/f/cards/AnalyticalContent.js",
+				"sap/f/cards/BaseContent.js",
+				"sap/f/cards/DataProviderFactory.js",
+				"sap/f/cards/Header.js",
+				"sap/f/cards/NumericHeader.js",
+				"sap/f/library.js",
+				"sap/m/HBox.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/Global.js",
+				"sap/ui/base/DataType.js",
+				"sap/ui/base/EventProvider.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/Manifest.js",
+				"sap/ui/core/library.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/thirdparty/jquery.js",
+				"sap/ui/thirdparty/less.js"
+			],
+			"included": [
+				"sap/ui/integration/library.js",
+				"sap/ui/integration/manifest.json",
+				"sap-ui-integration.js",
+				"sap/ui/integration/host/HostConfiguration.js",
+				"sap/ui/integration/host/HostConfigurationCompiler.js",
+				"sap/ui/integration/library-bootstrap.js",
+				"sap/ui/integration/sap-ui-integration-config.js",
+				"sap/ui/integration/services/Data.js",
+				"sap/ui/integration/services/Navigation.js",
+				"sap/ui/integration/services/Service.js",
+				"sap/ui/integration/util/CardManifest.js",
+				"sap/ui/integration/util/CustomElements.js",
+				"sap/ui/integration/util/ServiceManager.js",
+				"sap/ui/integration/widgets/Card.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js",
+			"module": "sap/ui/integration/library-h2-preload.js",
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/f/CardRenderer.js",
+				"sap/f/cards/AnalyticalContent.js",
+				"sap/f/cards/BaseContent.js",
+				"sap/f/cards/DataProviderFactory.js",
+				"sap/f/cards/Header.js",
+				"sap/f/cards/NumericHeader.js",
+				"sap/f/library.js",
+				"sap/m/HBox.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/Global.js",
+				"sap/ui/base/DataType.js",
+				"sap/ui/base/EventProvider.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/Manifest.js",
+				"sap/ui/core/library.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/thirdparty/jquery.js",
+				"sap/ui/thirdparty/less.js"
+			],
+			"included": [
+				"sap/ui/integration/library.js",
+				"sap/ui/integration/manifest.json",
+				"sap-ui-integration.js",
+				"sap/ui/integration/host/HostConfiguration.js",
+				"sap/ui/integration/host/HostConfigurationCompiler.js",
+				"sap/ui/integration/library-bootstrap.js",
+				"sap/ui/integration/sap-ui-integration-config.js",
+				"sap/ui/integration/services/Data.js",
+				"sap/ui/integration/services/Navigation.js",
+				"sap/ui/integration/services/Service.js",
+				"sap/ui/integration/util/CardManifest.js",
+				"sap/ui/integration/util/CustomElements.js",
+				"sap/ui/integration/util/ServiceManager.js",
+				"sap/ui/integration/widgets/Card.js"
+			]
+		},
+		{
+			"name": "library-h2-preload.js.map",
+			"isDebug": true
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/ui/integration/library-preload.js",
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/f/CardRenderer.js",
+				"sap/f/cards/AnalyticalContent.js",
+				"sap/f/cards/BaseContent.js",
+				"sap/f/cards/DataProviderFactory.js",
+				"sap/f/cards/Header.js",
+				"sap/f/cards/NumericHeader.js",
+				"sap/f/library.js",
+				"sap/m/HBox.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/Global.js",
+				"sap/ui/base/DataType.js",
+				"sap/ui/base/EventProvider.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/Manifest.js",
+				"sap/ui/core/library.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/thirdparty/jquery.js",
+				"sap/ui/thirdparty/less.js"
+			],
+			"included": [
+				"sap-ui-integration.js",
+				"sap/ui/integration/host/HostConfiguration.js",
+				"sap/ui/integration/host/HostConfigurationCompiler.js",
+				"sap/ui/integration/library-bootstrap.js",
+				"sap/ui/integration/library.js",
+				"sap/ui/integration/manifest.json",
+				"sap/ui/integration/sap-ui-integration-config.js",
+				"sap/ui/integration/services/Data.js",
+				"sap/ui/integration/services/Navigation.js",
+				"sap/ui/integration/services/Service.js",
+				"sap/ui/integration/util/CardManifest.js",
+				"sap/ui/integration/util/CustomElements.js",
+				"sap/ui/integration/util/ServiceManager.js",
+				"sap/ui/integration/widgets/Card.js"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"isDebug": true
+		},
+		{
+			"name": "library-preload.json",
+			"module": "sap/ui/integration/library-preload.json",
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/f/CardRenderer.js",
+				"sap/f/cards/AnalyticalContent.js",
+				"sap/f/cards/BaseContent.js",
+				"sap/f/cards/DataProviderFactory.js",
+				"sap/f/cards/Header.js",
+				"sap/f/cards/NumericHeader.js",
+				"sap/f/library-preload.json",
+				"sap/f/library.js",
+				"sap/m/HBox.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/Global.js",
+				"sap/ui/base/DataType.js",
+				"sap/ui/base/EventProvider.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/Manifest.js",
+				"sap/ui/core/library-preload.json",
+				"sap/ui/core/library.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/thirdparty/jquery.js",
+				"sap/ui/thirdparty/less.js"
+			],
+			"included": [
+				"sap-ui-integration.js",
+				"sap/ui/integration/host/HostConfiguration.js",
+				"sap/ui/integration/host/HostConfigurationCompiler.js",
+				"sap/ui/integration/library-bootstrap.js",
+				"sap/ui/integration/library.js",
+				"sap/ui/integration/manifest.json",
+				"sap/ui/integration/sap-ui-integration-config.js",
+				"sap/ui/integration/services/Data.js",
+				"sap/ui/integration/services/Navigation.js",
+				"sap/ui/integration/services/Service.js",
+				"sap/ui/integration/util/CardManifest.js",
+				"sap/ui/integration/util/CustomElements.js",
+				"sap/ui/integration/util/ServiceManager.js",
+				"sap/ui/integration/widgets/Card.js"
+			]
+		},
+		{
+			"name": "library.dependencies.json",
+			"designtime": true
+		},
+		{
+			"name": "library.dependencies.xml",
+			"designtime": true
+		},
+		{
+			"name": "library.js",
+			"module": "sap/ui/integration/library.js",
+			"required": [
+				"sap/f/library.js",
+				"sap/ui/Global.js",
+				"sap/ui/base/DataType.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "library.templates.xml",
+			"designtime": true
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/ui/integration/manifest.json"
+		},
+		{
+			"name": "resources.json"
+		},
+		{
+			"name": "sap-ui-integration-config-dbg.js",
+			"module": "sap/ui/integration/sap-ui-integration-config.js",
+			"isDebug": true
+		},
+		{
+			"name": "sap-ui-integration-config.js",
+			"module": "sap/ui/integration/sap-ui-integration-config.js"
+		},
+		{
+			"name": "services/Data-dbg.js",
+			"module": "sap/ui/integration/services/Data.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/integration/services/Service.js"
+			]
+		},
+		{
+			"name": "services/Data.js",
+			"module": "sap/ui/integration/services/Data.js",
+			"required": [
+				"sap/ui/integration/services/Service.js"
+			]
+		},
+		{
+			"name": "services/Navigation-dbg.js",
+			"module": "sap/ui/integration/services/Navigation.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/integration/services/Service.js"
+			]
+		},
+		{
+			"name": "services/Navigation.js",
+			"module": "sap/ui/integration/services/Navigation.js",
+			"required": [
+				"sap/ui/integration/services/Service.js"
+			]
+		},
+		{
+			"name": "services/Service-dbg.js",
+			"module": "sap/ui/integration/services/Service.js",
+			"isDebug": true
+		},
+		{
+			"name": "services/Service.js",
+			"module": "sap/ui/integration/services/Service.js"
+		},
+		{
+			"name": "util/CardManifest-dbg.js",
+			"module": "sap/ui/integration/util/CardManifest.js",
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Manifest.js"
+			]
+		},
+		{
+			"name": "util/CardManifest.js",
+			"module": "sap/ui/integration/util/CardManifest.js",
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Manifest.js"
+			]
+		},
+		{
+			"name": "util/CustomElements-dbg.js",
+			"module": "sap/ui/integration/util/CustomElements.js",
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js"
+			]
+		},
+		{
+			"name": "util/CustomElements.js",
+			"module": "sap/ui/integration/util/CustomElements.js",
+			"required": [
+				"sap/base/Log.js"
+			]
+		},
+		{
+			"name": "util/ServiceManager-dbg.js",
+			"module": "sap/ui/integration/util/ServiceManager.js",
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/base/EventProvider.js"
+			]
+		},
+		{
+			"name": "util/ServiceManager.js",
+			"module": "sap/ui/integration/util/ServiceManager.js",
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/base/EventProvider.js"
+			]
+		},
+		{
+			"name": "widgets/Card-dbg.js",
+			"module": "sap/ui/integration/widgets/Card.js",
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/f/CardRenderer.js",
+				"sap/f/cards/BaseContent.js",
+				"sap/f/cards/DataProviderFactory.js",
+				"sap/f/cards/Header.js",
+				"sap/f/cards/NumericHeader.js",
+				"sap/f/library.js",
+				"sap/m/HBox.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/integration/library.js",
+				"sap/ui/integration/util/CardManifest.js",
+				"sap/ui/integration/util/ServiceManager.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		},
+		{
+			"name": "widgets/Card.js",
+			"module": "sap/ui/integration/widgets/Card.js",
+			"required": [
+				"sap/base/Log.js",
+				"sap/f/CardRenderer.js",
+				"sap/f/cards/BaseContent.js",
+				"sap/f/cards/DataProviderFactory.js",
+				"sap/f/cards/Header.js",
+				"sap/f/cards/NumericHeader.js",
+				"sap/f/library.js",
+				"sap/m/HBox.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/integration/library.js",
+				"sap/ui/integration/util/CardManifest.js",
+				"sap/ui/integration/util/ServiceManager.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/thirdparty/jquery.js"
+			]
+		}
+	]
+}

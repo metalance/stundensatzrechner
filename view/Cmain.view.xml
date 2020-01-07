@@ -1,0 +1,67 @@
+<mvc:View controllerName="com.metalance.chr.controller.Cmain" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.uxap" xmlns="sap.m" xmlns:semantic="sap.m.semantic" xmlns:fo="sap.f" xmlns:commons="sap.ui.commons">
+	<Page showHeader="true" title="{calclatr>/total}" tooltip="">
+		<Panel>		
+			<f:SimpleForm id="sfCalc" maxContainerCols="1" editable="true" title="Finanzielle Angaben" layout="ResponsiveGridLayout" labelSpanL="4"
+				labelSpanM="4" emptySpanL="1" emptySpanM="1" columnsL="1" columnsM="1">
+				<f:content>
+					<Label text="Bruttogehalt bei vergleichbarer Festanstellung" design="Bold" labelFor="averageSal" tooltip="€4556 entsprechen dem Durchschnittsverdienst eines Angestellten in Deutschland"/>
+					<Slider id="averageSal" min="1000" max="6000" value="{calclatr>/avgsal}" enableTickmarks="true" width="100%" liveChange="onValueChange">
+						<ResponsiveScale tickmarksBetweenLabels="20"/>
+					</Slider>
+					<Text text="€ {calclatr>/avgsal}" textAlign="Left"/>
+					<Label text="AG-Anteil zur Sozialversicherung" design="Bold" labelFor="anteilKkpv" tooltip="Krankenversicherung und Pflegeversicherung"/>
+					<Slider id="anteilKkpv" min="0" max="100" value="{calclatr>/kkpv}" enableTickmarks="true" width="100%" liveChange="onValueChange">
+						<ResponsiveScale tickmarksBetweenLabels="10"/>
+					</Slider>
+					<Text text="{calclatr>/kkpv} %" textAlign="Left"/>
+					<Label text="Monatliche Fixkosten" design="Bold" labelFor="fixkst" tooltip="Miete, Heizung, Strom, Büromaterial, Telefonkosten, Reisekosten, Kosten für Weiterbildung, Versicherungen, Beratung usw."/>
+					<Slider id="fixkst" min="0" max="4000" value="{calclatr>/fixk}" enableTickmarks="true" width="100%" liveChange="onValueChange">
+						<ResponsiveScale tickmarksBetweenLabels="10"/>
+					</Slider>
+					<Text text="€ {calclatr>/fixk}" textAlign="Left"/>
+					<Label text="Angestrebter Gewinn" design="Bold" labelFor="earng" tooltip="zur Bildung von Rücklagen, um Auftragslöcher zu überbrücken oder zukünftige Investitionen zu tätigen"/>
+					<Slider id="earng" min="0" max="100" value="{calclatr>/earning}" enableTickmarks="true" width="100%" liveChange="onValueChange">
+						<ResponsiveScale tickmarksBetweenLabels="10"/>
+					</Slider>
+					<Text text="{calclatr>/earning} %" textAlign="Left"/>
+				</f:content>
+			</f:SimpleForm>
+			<f:SimpleForm id="wrkDays" maxContainerCols="1" editable="true" title="Arbeitszeitbezogene Angaben" layout="ResponsiveGridLayout"
+				labelSpanL="4" labelSpanM="4" emptySpanL="1" columnsL="1" columnsM="1">
+				<f:content>
+					<Label text="Wochenenden" design="Bold" labelFor="weekEnds"/>
+					<Slider id="weekEnds" min="1" max="365" value="{calclatr>/weekends}" enableTickmarks="true" width="100%" liveChange="onValueChange">
+						<ResponsiveScale tickmarksBetweenLabels="9"/>
+					</Slider>
+					<Text text="{calclatr>/weekends} Tage" textAlign="Left"/>
+					<Label text="Feiertage" design="Bold" labelFor="hodays"/>
+					<Slider id="hodays" min="1" max="365" value="{calclatr>/hodays}" enableTickmarks="true" width="100%" liveChange="onValueChange">
+						<ResponsiveScale tickmarksBetweenLabels="9"/>
+					</Slider>
+					<Text text="{calclatr>/hodays} Tage" textAlign="Left"/>
+					<Label text="Urlaub" design="Bold" labelFor="vacat"/>
+					<Slider id="vacat" min="1" max="365" value="{calclatr>/vacat}" enableTickmarks="true" width="100%" liveChange="onValueChange">
+						<ResponsiveScale tickmarksBetweenLabels="9"/>
+					</Slider>
+					<Text text="{calclatr>/vacat} Tage" textAlign="Left"/>
+					<Label text="Krankheit" design="Bold" labelFor="illd"/>
+					<Slider id="illd" min="1" max="365" value="{calclatr>/illdays}" enableTickmarks="true" width="100%" liveChange="onValueChange">
+						<ResponsiveScale tickmarksBetweenLabels="9"/>
+					</Slider>
+					<Text text="{calclatr>/illdays} Tage" textAlign="Left"/>
+					<Label text="Aus-und Weiterbildung" design="Bold" labelFor="edud"/>
+					<Slider id="edud" min="1" max="365" value="{calclatr>/edudays}" enableTickmarks="true" width="100%" liveChange="onValueChange">
+						<ResponsiveScale tickmarksBetweenLabels="9"/>
+					</Slider>
+					<Text text="{calclatr>/edudays} Tage" textAlign="Left"/>
+					<Label text="Produktivität" design="Bold" labelFor="protivity" tooltip=" wird z.B. durch administrative Aufgaben und Vertriebsleistungen vermindert"/>
+					<Slider id="protivity" min="0" max="100" value="{calclatr>/prody}" enableTickmarks="true" width="100%" liveChange="onValueChange">
+						<ResponsiveScale tickmarksBetweenLabels="10"/>
+					</Slider>
+					<Text text="{calclatr>/prody} %" textAlign="Left"/>
+				</f:content>
+			</f:SimpleForm>
+		</Panel>
+	</Page>
+</mvc:View>
